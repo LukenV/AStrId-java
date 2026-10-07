@@ -23,18 +23,26 @@
 
   <dependencies>
 
-    <!-- Tree-sitter Java binding -->
+    <!-- Tree-sitter Java binding (old) => grammar was platform dependant
     <dependency>
       <groupId>io.github.tree-sitter</groupId>
       <artifactId>jtreesitter</artifactId>
       <version>0.26.1</version>
     </dependency>
+    -->
 
     <!-- edist equivalent in Java: TCS Alignment Toolbox -->
     <dependency>
       <groupId>de.cit-ec.tcs.alignment</groupId>
       <artifactId>trees</artifactId>
       <version>3.1.0</version>
+
+      <exclusions>
+        <exclusion>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
 
     <dependency>
@@ -43,6 +51,31 @@
       <version>1.0</version>
       <scope>system</scope>
       <systemPath>${project.basedir}/repository/at/unisalzburg/dbresearch/apted/1.0/apted-1.0.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>io.github.bonede</groupId>
+      <artifactId>tree-sitter</artifactId>
+      <version>0.26.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.github.bonede</groupId>
+      <artifactId>tree-sitter-java</artifactId>
+      <version>0.23.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.github.bonede</groupId>
+      <artifactId>tree-sitter-python</artifactId>
+      <version>0.25.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.42</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
