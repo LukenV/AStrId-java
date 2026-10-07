@@ -50,7 +50,7 @@
       <artifactId>apted</artifactId>
       <version>1.0</version>
       <scope>system</scope>
-      <systemPath>${project.basedir}/repository/at/unisalzburg/dbresearch/apted/1.0/apted-1.0.jar</systemPath>
+      <systemPath>${project.basedir}/libs/apted-1.0.jar</systemPath>
     </dependency>
 
     <dependency>
